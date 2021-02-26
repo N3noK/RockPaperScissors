@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="one page" id="first">
+
+    <img id="pic" alt="rockPaperScissors" src="retro-offset-rock-paper-scissors-icons.jpg">
+
+    <h2 id="firstTitle">Schere, Stein, Papier, Brunnen & Streichholz</h2>
+
+    <button id="changeMode">Wechsel zu Server</button>
+
+    <table class="leaderBoard" id="leaderBoard"></table>
+
+    <input type="text" id="playerName" name="name" placeholder="Name">
+    <button id="startButton">Spiel Starten</button>
+
+</section>
+
+
+<section class="two fadeOut page" id="second">
+
+    <h2 id="secondTitle">Schere, Stein, Papier, Brunnen & Streichholz</h2>
+
+    <p id="action">
+        UserName! Wähle deine Hand!
+    </p>
+
+    <div class="choices" id="choices">
+        <button class="schere" id="schere">Schere</button>
+        <button class="stein" id="stein">Stein</button>
+        <button class="papier" id="papier">Papier</button>
+        <button class="brunnen" id="brunnen">Brunnen</button>
+        <button class="streichholz" id="streichholz">Streichholz</button>
+    </div>
+
+    <p class="versus">
+        VS
+    </p>
+
+    <div id="computerChoice"> </div>
+
+    <div id="result"> </div>
+
+    <div id="timerCountdown"> </div>
+
+    <button id="backToRanking">Zurück zum Ranking</button>
+
+    <table id="historyPreTable">
+        <tr>
+            <th class="innerPreTable">Result</th>
+            <th class="innerPreTable">Player</th>
+            <th class="innerPreTable">Computer</th>
+        </tr>
+    </table>
+
+    <table class="historyTable" id="historyTable"></table>
+
+</section>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
